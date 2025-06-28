@@ -9,24 +9,25 @@ Mobile-first responsive design ensures usability on all devices.
 Error handling is built-in for invalid inputs or API failures.
 
 # Features
-. Real-time route, distance, and time calculation
-. Live API integration (Nominatim + OSRM)
-. Responsive UI for mobile and desktop
-. Clean layout and modern design
-. Hosted on Render (globally accessible)
-. Works with any location or city input
-. Fast response via optimized API calls
-. Clear error messages for failed searches
-. Frontend + backend full-stack structure
-. Lightweight and minimal dependencies
+- Real-time route, distance, and time calculation
+- Live API integration (Nominatim + OSRM)
+- Responsive UI for mobile and desktop
+- Clean layout and modern design
+- Hosted on Render (globally accessible)
+- Works with any location or city input
+- Fast response via optimized API calls
+- Clear error messages for failed searches
+- Frontend + backend full-stack structure
+- Lightweight and minimal dependencies
 
 # Tech
-. Frontend: HTML, CSS, JavaScript
-. Backend: Node.js, Express
-. APIs: Nominatim (OpenStreetMap), OSRM (Routing)
-. Hosting: Render.com
-. Other Tools: GitHub, npm, node-fetch
+* Frontend: HTML, CSS, JavaScript
+* Backend: Node.js, Express
+* APIs: Nominatim (OpenStreetMap), OSRM (Routing)
+* Hosting: Render.com
+* Other Tools: GitHub, npm, node-fetch
 
 # Benefits
-. Get quick travel distance and time estimates
-. Simple UI with powerful backend logic
+- Get quick travel distance and time estimates
+- Simple UI with powerful backend logic
+  
