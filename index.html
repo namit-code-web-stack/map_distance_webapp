@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="navbar">
+        <div class="nav1">
+            <a href="home.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                </svg></a>
+        </div>
+        <div class="nav2">
+            <a href="about.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path
+                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg></a>
+        </div>
+        <div class="nav3">
+            <a href="help.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627" />
+                </svg></a>
+        </div>
+        <div class="nav4">
+            <a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765zM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516M0 13.373l5.693-3.163L0 6.873z" />
+                </svg></a>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="main_container">
+
+        <div id="leftContainer">
+            <div id="title">
+                <h2>API LOCATION</h2>
+            </div>
+            <div id="content">
+                <p> This web app allows users to find the driving route and distance between any two locations by
+                    entering a source and destination. It uses the OpenStreetMap Nominatim API to fetch coordinates, and
+                    the OSRM routing API to calculate the distance and duration between them. The app is powered by an
+                    Express.js backend and displays the results in a responsive, modern UI with a smooth gradient
+                    background and custom fonts.</p>
+
+            </div>
+        </div>
+
+
+        <div id="rightcontainer">
+
+            <div id="container">
+                <div id="source_destination">
+                    <input type="text" id="source" placeholder="source">
+                    <input type="text" id="destination" placeholder="destination">
+                </div>
+                <div id="button">
+                    <input type="submit" id="button1">
+                </div>
+                
+                <div id="loader">
+                <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="output">
+                    <div class="distance1">
+                    <label for="distance">DISTANCE : </label>
+                    <div id="distance"></div>
+                   </div>
+                   <div class="time1">
+                    <label for="time">TIME :</label>
+                    <div id="time"></div>
+                   </div>
+                </div>
+                <div id="name">
+                 <div class="source_name1">
+                  <label for="source_name">SOURCE NAME : </label>
+                 <div id="source_name"></div></div>
+                 <div class="destination_name1">
+                     <label for="destination_name"> DESTINATION NAME : </label>
+                 <div id="destination_name"></div></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script>
+
+</html>
