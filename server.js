@@ -50,5 +50,6 @@ app.post("/api1", (req, res) => {
 
 
 app.listen(port, () => {
+  res.send("server started")
   console.log(`✅ Server running on http://localhost:${port}`);
 });
