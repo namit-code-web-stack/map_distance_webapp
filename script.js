@@ -3,7 +3,7 @@
 function sendapi() {
   const src = source.value;
   const dest = destination.value;
-  fetch("http://localhost:8000/api1", {
+  fetch("https://map-distance-webapp-2.onrender.com/api1", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ source: src, destination: dest })
