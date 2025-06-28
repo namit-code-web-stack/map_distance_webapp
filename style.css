@@ -215,3 +215,14 @@ svg {
     
 }
 }
+@media screen and (max-width:450px) {
+    #source_destination {
+     display: flex;
+ flex-direction: column;
+ gap:2vh
+    }
+    
+#sourcename{
+    font-size: 0.5vh;
+}
+}
