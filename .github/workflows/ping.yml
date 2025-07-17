@@ -1,0 +1,18 @@
+name: Keep Alive
+
+on:
+  schedule:
+    - cron: '*/14 * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GET /
+        run: curl https://map-distance-webapp-2.onrender.com/
+
+      - name: POST /api1
+        run: |
+          curl -X POST https://map-distance-webapp-2.onrender.com/api1 \
+          -H "Content-Type: application/json" \
+          -d '{"source":"Mumbai", "destination":"Pune"}'
