@@ -46,8 +46,9 @@ app.post("/api1", (req, res) => {
 
 });
 
-
-
+app.get("/",(req,res)=>{
+  res.send("<h1>hi from namit server </h1>")
+})
 
 app.listen(port, () => {
   res.send("server started")
